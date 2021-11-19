@@ -37,8 +37,9 @@ return(
 									<table className="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 										<thead>
 											<tr>
+											<th>Descripcion</th>
 											<th>Nombre</th>
-												<th>Descripcion</th>
+												
 												<th>Precio</th>
 												<th>Marca</th>
 												<th>Unidades</th>
@@ -47,9 +48,9 @@ return(
 										</thead>
 										<tfoot>
 											<tr>
-											
+											<th>Descripcion</th>
 												<th>Nombre</th>
-												<th>Descripcion</th>
+												
 												<th>Precio</th>
 												<th>Marca</th>
 												<th>Unidades</th>
@@ -61,8 +62,9 @@ return(
 											{products.map((dato,i)=>
 
 												<Info key={i} 
+												descripcion= {dato.descripcion}
 													nombre= {dato.nombre}
-													descripcion= {dato.descripcion}
+													
 													precio={dato.precio}
 													marca= {dato.marca.marca}
 													unidades= {dato.unidades}
