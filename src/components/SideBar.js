@@ -1,5 +1,10 @@
 import React from 'react';
-import image from '../assets/images/logo-DH.png';
+import image from '../assets/images/logo.png';
+import { 
+    Link
+  } from "react-router-dom";
+  
+
 
 function SideBar(){
     return(
@@ -10,7 +15,7 @@ function SideBar(){
                 {/*<!-- Sidebar - Brand -->*/}
                 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
                     <div className="sidebar-brand-icon">
-                        <img className="w-100" src={image} alt="Digital House"/>
+                        <img className="w-100" src={image} alt="Blue Nami"/>
                     </div>
                 </a>
 
@@ -21,7 +26,7 @@ function SideBar(){
                 <li className="nav-item active">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard - DH movies</span></a>
+                        <span><Link exact to = '/Home'>Dashboard - BlueNami</Link></span></a>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -51,7 +56,17 @@ function SideBar(){
                         <i className="fas fa-fw fa-table"></i>
                         <span>Tables</span></a>
                 </li>
-
+                <li className="nav-item">
+                    <a className="nav-link" href="/">
+                        <i className="fas fa-fw fa-table"></i>
+                        <span><Link to = '/marcas'>Marcas</Link></span></a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="/">
+                        <i className="fas fa-fw fa-table"></i>
+                        <span><Link to = '/content'>ContentRowProducts</Link></span></a>
+                </li>
+                
                 {/*<!-- Divider -->*/}
                 <hr className="sidebar-divider d-none d-md-block"/>
             </ul>

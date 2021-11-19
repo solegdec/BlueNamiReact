@@ -1,4 +1,4 @@
-function MovieList(props){
+function ProductList(props){
 
     return(
         <>
@@ -13,4 +13,4 @@ function MovieList(props){
     )
 }
 
-export default MovieList;
+export default ProductList;

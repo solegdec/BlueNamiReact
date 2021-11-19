@@ -25,7 +25,7 @@ let user = {
 let cardProps = [productInDataBase,amount,user];
 
 
-function ContentRowTop(){
+function ContentRowProducts(){
     return (
         <React.Fragment>
         {/*<!-- Content Row -->*/}
@@ -39,4 +39,4 @@ function ContentRowTop(){
         </React.Fragment>
     )
 }
-export default ContentRowTop;
+export default ContentRowProducts;

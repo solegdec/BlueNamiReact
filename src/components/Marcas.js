@@ -23,7 +23,7 @@ class GenresInDb extends Component{
         }
     }
     componentDidMount(){
-        fetch("/api/genres")
+        fetch("/api/marcas")
         .then(res => res.json())
         .then(genres =>{
             this.setState({genresList: genres.data})
