@@ -10,7 +10,6 @@ function Info({nombre, descripcion, precio, marca, unidades}) {
                 <td>{descripcion}</td>
                 <td>{precio}</td>
                 <td>{marca}</td>
-                
                 <td>{unidades}</td>
             </tr>
         </tbody>

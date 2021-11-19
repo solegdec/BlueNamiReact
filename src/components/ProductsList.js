@@ -1,4 +1,4 @@
-function ProductList(props){
+function ProductsList(props){
 
     return(
         <>
@@ -13,4 +13,4 @@ function ProductList(props){
     )
 }
 
-export default ProductList;
+export default ProductsList;

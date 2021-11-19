@@ -31,7 +31,7 @@ function App() {
       	<Route path ='/home' element={<Home/>}/>
         <Route path="/marcas" element={<Marcas/>} />
         
-        <Route path ="/products" element={<Products/>}/>
+        <Route path ="/content" element={<Products/>}/>
         
         <Route path= "*" element = {<NotFound/>}/>
 

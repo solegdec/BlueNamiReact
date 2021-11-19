@@ -14,7 +14,7 @@ function SearchProducts(){
 	// Credenciales de API
 	
 	useEffect(() =>{
-		fetch(`http://localhost:8000/api`)
+		fetch(`/api/`)
 			.then(result => result.json())
 			.then(data=>{
 			setProducts(data.Search)
@@ -33,7 +33,7 @@ function SearchProducts(){
 							{/* Buscador */}
 							<form method="GET">
 								<div className="form-group">
-									<label htmlFor="">Buscar por título:</label>
+									<label htmlFor="">Buscar por Nombre:</label>
 									<input type="text" className="form-control" />
 								</div>
 								<button className="btn btn-info">Search</button>
@@ -42,7 +42,7 @@ function SearchProducts(){
 					</div>
 					<div className="row">
 						<div className="col-12">
-							<h2>Películas para la palabra: </h2>
+							<h2>Productos para la palabra: </h2>
 						</div>
 						{/* Listado de películas */}
 						{

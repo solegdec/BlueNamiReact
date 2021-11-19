@@ -1,5 +1,5 @@
 import React from 'react';
-import foto from '../assets/images/tabla5.png';
+import foto from '../assets/images/logo.png';
 
 function TopBar(){
     return(

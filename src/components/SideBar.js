@@ -33,13 +33,13 @@ function SideBar(){
                 <hr className="sidebar-divider"/>
 
                 {/*<!-- Heading -->*/}
-                <div className="sidebar-heading">Actions</div>
+                <div className="sidebar-heading">Surfeando el dashboard</div>
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
                     <a className="nav-link collapsed" href="/">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
+                        <span>Listado de</span>
                     </a>
                 </li>
 
@@ -47,24 +47,24 @@ function SideBar(){
                 <li className="nav-item">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-chart-area"></i>
-                        <span>Charts</span></a>
+                        <span>Listado de</span></a>
                 </li>
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-table"></i>
-                        <span>Tables</span></a>
+                        <span>Usuarios</span></a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-table"></i>
-                        <span><Link to = '/marcas'>Marcas</Link></span></a>
+                        <span><Link to = '/marcas'>Nuestras Marcas</Link></span></a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-table"></i>
-                        <span><Link to = '/content'>ContentRowProducts</Link></span></a>
+                        <span><Link to = '/content'>Nuestros Productos</Link></span></a>
                 </li>
                 
                 {/*<!-- Divider -->*/}

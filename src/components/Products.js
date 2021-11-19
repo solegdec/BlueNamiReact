@@ -2,28 +2,24 @@ import React, { Component, useEffect, useState } from 'react';
 import Info from "./Info.js"
 import ProductsList from './ProductsList';
 
-let datos = [
-    {
-        nombre: "Ninguna información",
-        descripcion:"Ninguna información",
-        precio:"$0",
-        marca: ["Ninguna información"],
-        colores:["Ninguna infomación"],
-        unidades: 0
-    }
-]
-function Products (){
-	
-	let [products,setProducts]=useState(datos);
-	useEffect(()=>{
-		fetch("http://localhost:8000/api")
-		.then(res => res.json())
-		.then(data => {
-			let array=data.data
-			setProducts(array)
+class Products extends Component{
+
+	constructor(){
+		super()
+		this.state = {
+			productsList: []
 		}
-			
-		)},[])
+	}
+
+	componentDidMount(){
+		fetch("/api/products")
+		.then(res => res.json())
+		.then(products => {
+			this.setState({productsList: products.data})
+			 console.log(products)
+		})
+	}
+	render(){
 
 return(
 			<React.Fragment>
@@ -37,9 +33,10 @@ return(
 									<table className="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 										<thead>
 											<tr>
-											<th>Descripcion</th>
+											<th>Id</th>
+											
 											<th>Nombre</th>
-												
+											<th>Descripcion</th>
 												<th>Precio</th>
 												<th>Marca</th>
 												<th>Unidades</th>
@@ -48,6 +45,7 @@ return(
 										</thead>
 										<tfoot>
 											<tr>
+											<th>Id</th>
 											<th>Descripcion</th>
 												<th>Nombre</th>
 												
@@ -59,17 +57,11 @@ return(
 											</tr>
 										</tfoot>
 										<tbody>
-											{products.map((dato,i)=>
-
-												<Info key={i} 
-												descripcion= {dato.descripcion}
-													nombre= {dato.nombre}
-													
-													precio={dato.precio}
-													marca= {dato.marca.marca}
-													unidades= {dato.unidades}
-												/>
-											)}
+										{ 
+												this.state.productsList.map((product, i)=>{
+													return <ProductsList {...product} key={i} />
+												})
+											}
 										</tbody>
 									</table>
 								</div>
@@ -77,6 +69,6 @@ return(
 						</div>            
 			</React.Fragment>
 		)
-	}
+	}}
 
 export default Products;
