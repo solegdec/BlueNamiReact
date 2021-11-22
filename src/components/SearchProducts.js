@@ -20,7 +20,7 @@ function SearchProducts(){
 			setProducts(data.Search)
             console.log(products)
 		})
-	},[])
+	},)
 
 
 	return(
@@ -51,7 +51,7 @@ function SearchProducts(){
 									<div className="col-sm-6 col-md-3 my-4" key={i}>
 										<div className="card shadow mb-4">
 											<div className="card-header py-3">
-												<h5 className="m-0 font-weight-bold text-gray-800">{product.Title}</h5>
+												<h5 className="m-0 font-weight-bold text-gray-800">{product.Nombre}</h5>
 											</div>
 											<div className="card-body">
 												<div className="text-center">
@@ -62,7 +62,7 @@ function SearchProducts(){
 														style={{ width: '90%', height: '400px', objectFit: 'cover' }} 
 													/>
 												</div>
-												<p>{product.Year}</p>
+												<p>{product.Marca}</p>
 											</div>
 										</div>
 									</div>
@@ -70,7 +70,7 @@ function SearchProducts(){
 							})
 						}
 					</div>
-					{ products.length === 0 && <div className="alert alert-warning text-center">No se encontraron películas</div>}
+					{ products.length === 0 && <div className="alert alert-warning text-center">No se encontraron productos</div>}
 				</>
 				
 			}

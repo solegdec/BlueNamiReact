@@ -1,9 +1,10 @@
 import React from 'react';
 import TopBar from './TopBar';
 import ContentRowProducts from './ContentRowProducts';
-import Product from './Products';
+import Products from './Products';
 import Footer from './Footer';
 import SearchProducts from './SearchProducts';
+import MarcasInDb from './Marcas';
 function ContentWrapper(){
     return (
         <React.Fragment>
@@ -14,7 +15,8 @@ function ContentWrapper(){
                     <TopBar />
                     <SearchProducts/>
                     <ContentRowProducts/>
-                    <Product/>
+                    <Products/>
+                    <MarcasInDb/>
                     <Footer />
                 </div>
             </div>    

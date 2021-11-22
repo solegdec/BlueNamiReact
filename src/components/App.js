@@ -18,25 +18,30 @@ import {
   Route,
 
 } from "react-router-dom";
+import SearchProducts from './SearchProducts';
+import ContentWrapper from './Home.js';
 
 function App() {
   return (
     <React.Fragment>
+      
         <BrowserRouter>
      
       	<div id="wrapper">
-          <SideBar/>
-              
+        
+        <SideBar/>
+           
         <Routes>
+        
       	<Route path ='/home' element={<Home/>}/>
         <Route path="/marcas" element={<Marcas/>} />
-        
-        <Route path ="/content" element={<Products/>}/>
-        
+        <Route path="/buscar" element={<SearchProducts/>} />
+        <Route path ="/products" element={<Products/>}/>
         <Route path= "*" element = {<NotFound/>}/>
 
         </Routes>
-        
+
+       
         </div>
         </BrowserRouter>
     </React.Fragment>

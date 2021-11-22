@@ -39,15 +39,8 @@ function SideBar(){
                 <li className="nav-item">
                     <a className="nav-link collapsed" href="/">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Listado de</span>
-                    </a>
-                </li>
-
-                {/*<!-- Nav Item - Charts -->*/}
-                <li className="nav-item">
-                    <a className="nav-link" href="/">
-                        <i className="fas fa-fw fa-chart-area"></i>
-                        <span>Listado de</span></a>
+                        <span><Link to = '/marcas'>Buscar</Link></span></a>
+                    
                 </li>
 
                 {/*<!-- Nav Item - Tables -->*/}
@@ -64,7 +57,7 @@ function SideBar(){
                 <li className="nav-item">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-table"></i>
-                        <span><Link to = '/content'>Nuestros Productos</Link></span></a>
+                        <span><Link to = '/products'>Nuestras Tablas</Link></span></a>
                 </li>
                 
                 {/*<!-- Divider -->*/}

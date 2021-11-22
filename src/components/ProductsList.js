@@ -4,10 +4,10 @@ function ProductsList(props){
         <>
             <tr>
                 <td>{props.id}</td>
-                <td>{props.title}</td>
-                <td>{props.rating}</td>
-                <td>{props.awards}</td>
-                <td>{props.length}</td>
+                <td>{props.nombre}</td>
+                <td>{props.descripcion}</td>
+                <td>{props.precio}</td>
+                <td>{props.marca}</td>
             </tr>
         </>
     )

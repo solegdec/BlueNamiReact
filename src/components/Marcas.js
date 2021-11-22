@@ -34,7 +34,7 @@ class MarcasInDb extends Component{
                         <div className="card shadow mb-4">
                             <div className="card-header py-3">
                                 <h6 onMouseOver={this.changeColor} onMouseOut={this.changeColor} className="m-0 font-weight-bold text-gray-800">
-                                    Marcas Data Base
+                                    Nuestras Marcas
                                 </h6>
                             </div>
                             <div className="card-body">
