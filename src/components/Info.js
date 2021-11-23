@@ -21,7 +21,8 @@ Info.propTypes ={
     descripcion: PropTypes.string.isRequired,
     precio: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
     marca: PropTypes.string.isRequired,
-    unidades: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired
+    unidades: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+   
 }
 Info.defaultProps = {
     nombre: "Sin nombre",
@@ -29,6 +30,7 @@ Info.defaultProps = {
     precio: "Sin Precio",
     marca: "Sin Marca",
     unidades:"Sin Unidades"
+
 }
 
 

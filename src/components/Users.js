@@ -1,22 +1,21 @@
 import React, { Component, useEffect, useState } from 'react';
 import Info from "./Info.js"
-import ProductsList from './ProductsList';
-import "./Products.css";
+import UsersList from './UsersList.js';
 
-class Products extends Component{
+class Users extends Component{
 
 	constructor(){
 		super()
 		this.state = {
-			productsList: []
+			usersList: []
 		}
 	}
 
 	componentDidMount(){
-		fetch("/api/products")
+		fetch("/api/users")
 		.then(res => res.json())
-		.then(products => {
-			this.setState({productsList: products.data})
+		.then(users => {
+			this.setState({usersList: users.users})
 			
 			
 			 
@@ -40,26 +39,28 @@ return(
 											<tr>
 											<th>Id</th>
 											<th>Nombre</th>
-											<th>Descripcion</th>
-											<th>Precio</th>
-											<th>Marca</th>
-											<th>Unidades</th>
-											<th>Foto</th>
+											<th>Apellido</th>
+                                            <th>E-mail</th>
+											<th>Fecha de Nacimiento</th>
+											<th>Pais de Origen</th>
+											<th>Genero</th>
+											<th>Avatar</th>
 											</tr>
 										</thead>
 										
 										
 										<tbody>
 											
-											{this.state.productsList.map((product, i)=>{
-													return <ProductsList 
-														id={product.id}
-														nombre={product.nombre}
-														descripcion={product.descripcion}
-														precio={product.precio}
-														marca={product.marca_id}
-														unidades={product.unidades}
-														foto={"/images/" + product.foto}
+											{this.state.usersList.map((user, i)=>{
+													return < UsersList 
+														id={user.id}
+														nombre={user.nombre}
+														apellido={user.apellido}
+                                                        email={user.email}
+														fechaNac={user.fechaNac}
+														pais={user.pais}
+														genero={user.genero}
+                                                        avatar={user.avatar}
 														
 
 													 key={i} />
@@ -75,4 +76,4 @@ return(
 		)
 	}}
 
-export default Products;
+export default Users;

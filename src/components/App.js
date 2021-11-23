@@ -6,7 +6,7 @@ import NotFound from './NotFound.js';
 import Products from "./Products.js"
 import {  BrowserRouter,  Routes,  Route,} from "react-router-dom";
 import SearchProducts from './SearchProducts';
-
+import Users from './Users';
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
         <Route path="/marcas" element={<Marcas/>} />
         <Route path="/buscar" element={<SearchProducts/>} />
         <Route path ="/products" element={<Products/>}/>
+        <Route path ="/users" element={<Users/>}/>
         <Route path= "*" element = {<NotFound/>}/>
 
         </Routes>
