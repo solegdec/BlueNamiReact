@@ -3,10 +3,13 @@ import SideBar from './SideBar';
 import Home from './Home.js';
 import Marcas from "./Marcas.js"
 import NotFound from './NotFound.js';
-import Products from "./Products.js"
+import Products from "./Products.js";
 import {  BrowserRouter,  Routes,  Route,} from "react-router-dom";
 import SearchProducts from './SearchProducts';
 import Users from './Users';
+
+
+
 
 function App() {
   return (

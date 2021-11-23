@@ -1,5 +1,7 @@
 import React from 'react';
 import image from '../assets/images/logo.png';
+import "./SideBar.css";
+
 import { 
     Link
   } from "react-router-dom";
