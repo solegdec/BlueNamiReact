@@ -1,0 +1,18 @@
+.h3mb-2 h1{
+    font-family: "lobster";
+    font-size: 40px;
+   text-align: center;
+   margin: 20px;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+thead.tablitaMarcas{
+    background-color: #36b9cc
+
+    
+}
+.tablitaMarcas th{
+    font-family: "roboto";
+    color:white;
+
+}

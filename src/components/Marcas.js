@@ -1,6 +1,8 @@
 import React, { Component, useEffect, useState } from 'react';
 import Info from "./Info.js"
 import MarcasList from './MarcasList';
+import "./Marcas.css";
+
 
 class Marcas extends Component{
 
@@ -15,8 +17,8 @@ class Marcas extends Component{
 		fetch("/api/marcas")
 		.then(res => res.json())
 		.then(marcas => {
-			this.setState([{marcasList: marcas.data}])
-			 console.log(marcas)
+			this.setState({marcasList: marcas.data})
+			 console.log(marcas.data)
 		})
 	}
 	render(){
@@ -24,38 +26,20 @@ class Marcas extends Component{
 return(
 			<React.Fragment>
 						{/*<!-- PRODUCTS LIST -->*/}
-						<h1 className="h3 mb-2 text-gray-800">Nuestras Marcas</h1>
+						<div className="h3mb-2 text-gray-800"><h1>Nuestras Marcas</h1></div>
 						
 						{/*<!-- DataTales Example -->*/}
 						<div className="card shadow mb-4">
 							<div className="card-body">
 								<div className="table-responsive">
 									<table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
-										<thead>
+										<thead className="tablitaMarcas">
 											<tr>
 											<th>Id</th>
-											
-											<th>Nombre</th>
-											<th>Descripcion</th>
-												<th>Precio</th>
-												<th>Marca</th>
-												<th>Unidades</th>
-												
+											<th>Marcas</th>
 											</tr>
 										</thead>
-										<tfoot>
-											<tr>
-											<th>Id</th>
-											<th>Descripcion</th>
-												<th>Nombre</th>
-												
-												<th>Precio</th>
-												<th>Marca</th>
-												<th>Unidades</th>
-												
-												
-											</tr>
-										</tfoot>
+										
 										<tbody>
 										{ 
 												this.state.marcasList.map((marca, i)=>{

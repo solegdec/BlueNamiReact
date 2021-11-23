@@ -1,10 +1,13 @@
+import "./MarcasList.css";
+
 function MarcasList(props){
 
     return(
         <>
-            <tr>
-                <td>{props.id}</td>
-                <td>{props.marca}</td>
+            <tr className="tablitaList">
+                <td className="idPro">{props.id}</td>
+                <td className="marca">{props.marca}</td>
+                
                
             </tr>
         </>

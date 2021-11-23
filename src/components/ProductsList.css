@@ -1,0 +1,15 @@
+tr.tablita:nth-child(even) {
+    background-color: #97d1da;
+    color: white;
+}
+td.nombre {
+    font-family: "lobster";
+    font-size: 30px;
+    
+}
+
+td.precios{
+    font-size: 30px;
+    font-family: "lobster";
+    text-align: center;
+}
