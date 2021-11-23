@@ -1,25 +1,24 @@
-
 import React from 'react';
 import SmallCard from './SmallCard';
 
 let productInDataBase = {
     color:   "primary",
     titulo: "Tablas",
-    valor: 21,
+    valor: null
     
 }
 
 let amount ={
     titulo: "Marcas",
     color:   "success",
-    valor: 79,
+    valor: null
     
 }
 
 let user = {
     color:   "warning",
-    titulo: "usuarios",
-    valor: 49,
+    titulo: "Usuarios",
+    valor: null,
     icono: "fas fa-user",
 }
 

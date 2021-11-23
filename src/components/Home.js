@@ -5,6 +5,7 @@ import Products from './Products';
 import Footer from './Footer';
 import SearchProducts from './SearchProducts';
 import MarcasInDb from './Marcas';
+import SmallCard from './SmallCard';
 function ContentWrapper(){
     return (
         <React.Fragment>
@@ -17,6 +18,7 @@ function ContentWrapper(){
                     <ContentRowProducts/>
                     <Products/>
                     <MarcasInDb/>
+                    <SmallCard/>
                     <Footer />
                 </div>
             </div>    

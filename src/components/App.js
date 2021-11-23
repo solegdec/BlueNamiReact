@@ -1,25 +1,12 @@
-
 import React from 'react';
 import SideBar from './SideBar';
 import Home from './Home.js';
 import Marcas from "./Marcas.js"
-import ContentRowProducts from'./ContentRowProducts.js';
 import NotFound from './NotFound.js';
 import Products from "./Products.js"
-
-import Footer from "./Footer.js";
-import Title from "./Title.js";
-import Database from "./DataBase.js";
-
-
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-
-} from "react-router-dom";
+import {  BrowserRouter,  Routes,  Route,} from "react-router-dom";
 import SearchProducts from './SearchProducts';
-import ContentWrapper from './Home.js';
+
 
 function App() {
   return (

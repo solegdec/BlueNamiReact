@@ -26,7 +26,7 @@ function SideBar(){
                 <li className="nav-item active">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span><Link exact to = '/Home'>Dashboard - BlueNami</Link></span></a>
+                        <span><Link  to = '/Home'>Dashboard - BlueNami</Link></span></a>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -36,18 +36,12 @@ function SideBar(){
                 <div className="sidebar-heading">Surfeando el dashboard</div>
 
                 {/*<!-- Nav Item - Pages -->*/}
-                <li className="nav-item">
-                    <a className="nav-link collapsed" href="/">
-                        <i className="fas fa-fw fa-folder"></i>
-                        <span><Link to = '/marcas'>Buscar</Link></span></a>
-                    
-                </li>
-
+                
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-table"></i>
-                        <span>Usuarios</span></a>
+                        <span><Link to = '/users'>Usuarios</Link></span></a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="/">

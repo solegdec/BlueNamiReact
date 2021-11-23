@@ -7,7 +7,9 @@ function ProductsList(props){
                 <td>{props.nombre}</td>
                 <td>{props.descripcion}</td>
                 <td>{props.precio}</td>
-                <td>{props.marca}</td>
+                
+                <td>{props.unidades}</td>
+    
             </tr>
         </>
     )

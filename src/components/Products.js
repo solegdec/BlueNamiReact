@@ -16,10 +16,18 @@ class Products extends Component{
 		.then(res => res.json())
 		.then(products => {
 			this.setState({productsList: products.data})
-			 console.log(products)
+			
+			console.log(products.data)
+			 
 		})
+		
 	}
+
 	render(){
+		const {
+			productsList
+		}=this.state
+		console.log(productsList)
 
 return(
 			<React.Fragment>
@@ -30,36 +38,32 @@ return(
 						<div className="card shadow mb-4">
 							<div className="card-body">
 								<div className="table-responsive">
-									<table className="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+									<table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
 										<thead>
 											<tr>
 											<th>Id</th>
-											
 											<th>Nombre</th>
 											<th>Descripcion</th>
-												<th>Precio</th>
-												<th>Marca</th>
-												<th>Unidades</th>
-												
+											<th>Precio</th>
+											<th>Unidades</th>
 											</tr>
 										</thead>
-										<tfoot>
-											<tr>
-											<th>Id</th>
-											<th>Descripcion</th>
-												<th>Nombre</th>
-												
-												<th>Precio</th>
-												<th>Marca</th>
-												<th>Unidades</th>
-												
-												
-											</tr>
-										</tfoot>
+										
+										
 										<tbody>
-										{ 
-												this.state.productsList.map((product, i)=>{
-													return <ProductsList {...product} key={i} />
+											
+											{this.state.productsList.map((product, i)=>{
+													return <ProductsList 
+														id={product.id}
+														nombre={product.nombre}
+														descripcion={product.descripcion}
+														precio={product.precio}
+														
+														unidades={product.unidades}
+														
+
+													 key={i} />
+												
 												})
 											}
 										</tbody>

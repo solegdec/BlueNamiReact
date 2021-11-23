@@ -1,57 +1,74 @@
-import React, {Component} from 'react';
+import React, { Component, useEffect, useState } from 'react';
+import Info from "./Info.js"
+import MarcasList from './MarcasList';
 
-import Marcas  from './Marcas';
+class Marcas extends Component{
 
+	constructor(){
+		super()
+		this.state = {
+			marcasList: []
+		}
+	}
 
+	componentDidMount(){
+		fetch("/api/marcas")
+		.then(res => res.json())
+		.then(marcas => {
+			this.setState([{marcasList: marcas.data}])
+			 console.log(marcas)
+		})
+	}
+	render(){
 
-class MarcasInDb extends Component{
-    constructor(){
-        super()
-        this.state = {
-            marcasList: []
-        }
-    }
-    componentDidMount(){
-        fetch("/api/marcas")
-        .then(res => res.json())
-        .then(marcas =>{
-            this.setState({marcasList: marcas.data})
-            console.log(this.state.marcasList)
-        })
-    }
+return(
+			<React.Fragment>
+						{/*<!-- PRODUCTS LIST -->*/}
+						<h1 className="h3 mb-2 text-gray-800">Nuestras Marcas</h1>
+						
+						{/*<!-- DataTales Example -->*/}
+						<div className="card shadow mb-4">
+							<div className="card-body">
+								<div className="table-responsive">
+									<table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
+										<thead>
+											<tr>
+											<th>Id</th>
+											
+											<th>Nombre</th>
+											<th>Descripcion</th>
+												<th>Precio</th>
+												<th>Marca</th>
+												<th>Unidades</th>
+												
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+											<th>Id</th>
+											<th>Descripcion</th>
+												<th>Nombre</th>
+												
+												<th>Precio</th>
+												<th>Marca</th>
+												<th>Unidades</th>
+												
+												
+											</tr>
+										</tfoot>
+										<tbody>
+										{ 
+												this.state.marcasList.map((marca, i)=>{
+													return <MarcasList {...marca} key={i} />
+												})
+											}
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>            
+			</React.Fragment>
+		)
+	}}
 
-    changeColor(){
-        let title = document.querySelector("h6")
-        title.classList.toggle("bg-secondary");
-    }
-
-    render(){
-
-        return (
-            <React.Fragment>
-                    {/*<!-- Categories in DB -->*/}
-                    <div className="col-lg-6 mb-4">						
-                        <div className="card shadow mb-4">
-                            <div className="card-header py-3">
-                                <h6 onMouseOver={this.changeColor} onMouseOut={this.changeColor} className="m-0 font-weight-bold text-gray-800">
-                                    Nuestras Marcas
-                                </h6>
-                            </div>
-                            <div className="card-body">
-                                <div className="row">
-                                    {
-                                        this.state.marcasList.map((marca,index)=>{
-                                            return  <Marcas  {...marca}  key={index} />
-                                        })
-                                    }
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-               
-            </React.Fragment>
-        )
-    }
-
-}
-export default MarcasInDb;
+export default Marcas;
