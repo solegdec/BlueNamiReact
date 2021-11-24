@@ -19,7 +19,6 @@ function ContentWrapper(){
                     <ContentRowProducts/>
                     <Products/>
                     <MarcasInDb/>
-                    <SmallCard/>
                     <Footer />
                 </div>
             </div>    
