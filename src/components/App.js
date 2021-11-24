@@ -19,7 +19,7 @@ function App() {
         <SideBar/>
            
         <Routes>
-        
+        <Route path ='/' element={<Home/>}/>
       	<Route path ='/home' element={<Home/>}/>
         <Route path="/marcas" element={<Marcas/>} />
         <Route path="/buscar" element={<SearchProducts/>} />

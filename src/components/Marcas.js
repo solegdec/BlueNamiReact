@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState } from 'react';
-import Info from "./Info.js"
+
 import MarcasList from './MarcasList';
 import "./Marcas.css";
 

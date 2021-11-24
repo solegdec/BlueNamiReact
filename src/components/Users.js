@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState } from 'react';
-import Info from "./Info.js"
+
 import UsersList from './UsersList.js';
 
 class Users extends Component{
@@ -28,7 +28,7 @@ class Users extends Component{
 return(
 			<React.Fragment>
 						{/*<!-- PRODUCTS LIST -->*/}
-						<div className="h3 mb-2 text-gray-800"><h1>Nuestras Tablas</h1></div>
+						<div className="h3 mb-2 text-gray-800"><h1>Usuarios</h1></div>
 						
 						{/*<!-- DataTales Example -->*/}
 						<div className="card shadow mb-4">
