@@ -17,7 +17,7 @@ function SearchProducts(){
 		fetch(`/api/`)
 			.then(result => result.json())
 			.then(data=>{
-			setProducts(data.Search)
+			setProducts(data.search)
             console.log(products)
 		})
 	},)
@@ -36,7 +36,7 @@ function SearchProducts(){
 									<label htmlFor="">Buscar Tablas por Nombre:</label>
 									<input type="text" className="form-control" />
 								</div>
-								<button className="btn btn-info">Search</button>
+								<button type="submit"className="btn btn-info">Search</button>
 							</form>
 						</div>
 					</div>
