@@ -12,13 +12,13 @@ function CountProducts(){
             titulo: "Total de Tablas",
             cantidad: products,
             colorBorder: "primary",
-            icono: "fa-clipboard-list"
+           
         },
         {
             titulo: "Total de Marcas",
             cantidad: marcas,
             colorBorder: "success",
-            icono: "fa-dollar-sign"
+            
         },
         {
             titulo: "Total de Usuarios",

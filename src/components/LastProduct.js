@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react";
 import ViewLastProduct from "./ViewLastProduct";
-import image from '../assets/images/tablaVector.png';
+
 
 function LastProduct() {
     let [product, setProduct] = useState({
-        image:"../assets/images/tablaVector.png", 
+        image:'../assets/images/tablaVector.png',
         nombre:"No hay productos",
         url: "/" ,
         
@@ -18,7 +18,7 @@ function LastProduct() {
                 id:data.meta.lastProducts[0].id,
                 nombre: data.meta.lastProducts[0].nombre,
                 precio: data.meta.lastProducts[0].precio,
-                imagen:"/images/ "+ data.meta.lastProducts[0].foto,
+                imagen: "../assets/images/"+data.meta.lastProducts[0].foto,
                 url: "/products/"+ data.meta.lastProducts[0].id,
                
             })
