@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { Component } from 'react';
 import ProductsList from './ProductsList';
 import "./Products.css";
 
@@ -44,6 +44,8 @@ return(
 											<th>Marca</th>
 											<th>Unidades</th>
 											<th>Foto</th>
+											<th>Detalle</th>
+
 											</tr>
 										</thead>
 										
@@ -58,8 +60,8 @@ return(
 														precio={product.precio}
 														marca={product.marca_id}
 														unidades={product.unidades}
-														foto={ product.foto}
-														
+														foto={product.foto}
+														url={product.url}
 
 													 key={i} />
 												

@@ -18,7 +18,7 @@ function SearchProducts(){
 			.then(result => result.json())
 			.then(data=>{
 			setProducts(data.search)
-            console.log(products)
+            console.log(data)
 		})
 	},)
 
@@ -34,9 +34,10 @@ function SearchProducts(){
 							<form method="GET">
 								<div className="form-group">
 									<label htmlFor="">Buscar Tablas por Nombre:</label>
+									
 									<input type="text" className="form-control" />
 								</div>
-								<button type="submit"className="btn btn-info">Search</button>
+								<button className="btn btn-info">Search</button>
 							</form>
 						</div>
 					</div>

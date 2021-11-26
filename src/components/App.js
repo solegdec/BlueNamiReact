@@ -7,6 +7,7 @@ import Products from "./Products.js";
 import {  BrowserRouter,  Routes,  Route,} from "react-router-dom";
 import SearchProducts from './SearchProducts';
 import Users from './Users';
+import ViewProductDetail from "./ViewProductDetail";
 
 
 
@@ -28,7 +29,9 @@ function App() {
         <Route path="/buscar" element={<SearchProducts/>} />
         <Route path ="/products" element={<Products/>}/>
         <Route path ="/users" element={<Users/>}/>
+        <Route path ="/products/:id" element={<ViewProductDetail/>}/>
         <Route path= "*" element = {<NotFound/>}/>
+
 
         </Routes>
 

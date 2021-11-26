@@ -12,6 +12,7 @@ function ProductsList(props){
                 <td>{props.marca_id}</td>
                 <td>{props.unidades}</td>
                 <td>{props.foto}</td>
+                <td>{props.url}</td>
 
     
             </tr>
