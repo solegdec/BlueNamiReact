@@ -18,7 +18,7 @@ function ContentWrapper(){
                 <div id="content">
                     <TopBar />
                     <CountProducts/>
-                    <SearchProducts/>
+                    
                     <ContentRowProducts/>
                     <Products/>
                     <MarcasInDb/>

@@ -10,19 +10,19 @@ function CountProducts(){
     let datos = [
         {
             titulo: "Total de Tablas",
-            cifra: products,
+            cantidad: products,
             colorBorder: "primary",
             icono: "fa-clipboard-list"
         },
         {
             titulo: "Total de Marcas",
-            cifra: marcas,
+            cantidad: marcas,
             colorBorder: "success",
             icono: "fa-dollar-sign"
         },
         {
             titulo: "Total de Usuarios",
-            cifra: users,
+            cantidad: users,
             colorBorder: "warning",
             icono: "fa-user-check"
         }
@@ -45,8 +45,7 @@ function CountProducts(){
         fetch("/api/users")
         .then(resultado => resultado.json())
         .then(users => {
-            setUsers(users.count
-            )
+            setUsers(users.count)
         })
     }, [])
 
