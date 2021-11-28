@@ -1,4 +1,5 @@
 import React from "react";
+import "../assets/css/ViewProductDetail.css";
 
 function ViewProductDetail( {id, nombre, precio,imagen}) {
     

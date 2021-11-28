@@ -1,0 +1,28 @@
+.nmn h4{
+    color: #97d1da;
+    font-size: 25px;
+    display: inline-block;
+   
+
+}
+.nmn p{
+    color: #006f80;
+    font-size: 30px;
+    display: inline-block;
+    font-family: "caveat";
+
+}
+
+.text-center p{
+    font-size: 90px;
+    font-family: "caveat";
+    color: #006f80;
+    margin-bottom: -20px;
+}
+.text-center h4{
+    font-size: 30px;
+    text-align: left;
+    color: #97d1da;
+    margin-bottom: -20px;
+}
+

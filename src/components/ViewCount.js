@@ -1,4 +1,5 @@
 import React from "react";
+import "../assets/css/ViewCount.css";
 
 function ViewCount( {titulo, cantidad, colorBorder}) {
     

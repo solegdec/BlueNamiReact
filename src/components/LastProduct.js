@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
 import ViewLastProduct from "./ViewLastProduct";
 import ViewProductDetail from "./ViewProductDetail";
-import image from "../assets/images/tablaVector.png"
+import image from "../assets/images/tablaVector.png";
+import "../assets/css/LastProduct.css";
 
 function LastProduct() {
     let [product, setProduct] = useState({
@@ -48,10 +49,6 @@ function LastProduct() {
                     id={product.id} 
                     url={product.url} 
                     />
-
-               
-
-
             </div>
         </div>
     )
