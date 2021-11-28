@@ -16,16 +16,12 @@ class Products extends Component{
 		.then(res => res.json())
 		.then(products => {
 			this.setState({productsList: products.data})
-			
-			
-			 
 		})
-		
 	}
 
 	render(){
 		
-return(
+	return(
 			<React.Fragment>
 						{/*<!-- PRODUCTS LIST -->*/}
 						<div className="h3 mb-2 text-gray-800"><h1>Nuestras Tablas</h1></div>
@@ -44,7 +40,7 @@ return(
 											<th>Marca</th>
 											<th>Unidades</th>
 											<th>Foto</th>
-											<th>Detalle</th>
+											<th>Colores</th>
 
 											</tr>
 										</thead>
@@ -58,10 +54,11 @@ return(
 														nombre={product.nombre}
 														descripcion={product.descripcion}
 														precio={product.precio}
-														marca={product.marca_id}
+														marca={product.marca}
 														unidades={product.unidades}
 														foto={product.foto}
-														url={product.url}
+												
+														colores={product.colours}
 
 													 key={i} />
 												

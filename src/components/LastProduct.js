@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from "react";
 import ViewLastProduct from "./ViewLastProduct";
+import ViewProductDetail from "./ViewProductDetail";
 import image from "../assets/images/tablaVector.png"
 
 function LastProduct() {
     let [product, setProduct] = useState({
         imagen:image,
-        nombre:"No hay productos",
-        url: "/" ,
-        
+        nombre:"No hay productos",  
+        colores:["No hay colores"]
     })
 
     useEffect(()=>{
@@ -17,14 +17,15 @@ function LastProduct() {
             setProduct({    
                 id:data.meta.lastProducts[0].id,
                 nombre: data.meta.lastProducts[0].nombre,
+                marca: data.meta.lastProducts[0].marca.marca,
+                descripcion: data.meta.lastProducts[0].descripcion,
                 precio: data.meta.lastProducts[0].precio,
+                unidades: data.meta.lastProducts[0].unidades,
+                colores: data.data[data.meta.lastProducts[0].id-1].colours,
                 imagen: "/img/"+data.meta.lastProducts[0].foto,
-                url: "/products/"+ data.meta.lastProducts[0].id,
-               
+                url: "http://localhost:3000/products/" + data.meta.lastProducts[0].id, 
             })
-
-        })
-        
+        })       
     },[])
 
     return (
@@ -35,9 +36,22 @@ function LastProduct() {
                         Ultima Tabla que cargamos:
                     </h6>
                 </div>
+                
                 <ViewLastProduct 
-                    imagen={product.imagen}nombre={product.nombre}precio={product.precio}id={product.id} url={product.url} 
-                />
+                    colores={product.colores}
+                    marca={product.marca} 
+                    descripcion={product.descripcion} 
+                    unidades={product.unidades}
+                    imagen={product.imagen}
+                    nombre={product.nombre}
+                    precio={product.precio}
+                    id={product.id} 
+                    url={product.url} 
+                    />
+
+               
+
+
             </div>
         </div>
     )

@@ -9,10 +9,21 @@ function ProductsList(props){
                 <td className="nombre">{props.nombre}</td>
                 <td>{props.descripcion}</td>
                 <td className="precios"><p>${props.precio}</p></td>
-                <td>{props.marca_id}</td>
+                <td>{props.marca.marca}</td>
                 <td>{props.unidades}</td>
-                <td>{props.foto}</td>
-                <td>{props.url}</td>
+                <td><img style={{ width: "10rem" }} src={"/img/" + props.foto}></img></td>
+            
+                <td>
+                    <ul>
+                        {props.colores.map((color, i) => 
+                        <li key={i}>
+                            <span key={i} > 
+                                {color.color} 
+                            </span>
+                        </li> 
+                        )}
+                    </ul>
+                </td>
 
     
             </tr>
