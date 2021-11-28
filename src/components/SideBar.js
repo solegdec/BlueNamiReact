@@ -1,6 +1,6 @@
 import React from 'react';
 import image from '../assets/images/logo.png';
-import "./SideBar.css";
+import "../assets/css/SideBar.css";
 
 import { 
     Link

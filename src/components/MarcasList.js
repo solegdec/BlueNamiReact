@@ -1,4 +1,4 @@
-import "./MarcasList.css";
+import "../assets/css/MarcasList.css";
 
 function MarcasList(props){
 

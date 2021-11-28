@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import MarcasList from './MarcasList';
-import "./Marcas.css";
+import "../assets/css/Marcas.css";
 
 
 class Marcas extends Component{
