@@ -36,7 +36,10 @@ return(
 										<thead className="tablitaMarcas">
 											<tr>
 											<th>Id</th>
-											<th>Marcas</th>
+											<th>Marca</th>
+											<th>Cantidad de Productos</th>
+											<th>Productos</th>
+
 											</tr>
 										</thead>
 										

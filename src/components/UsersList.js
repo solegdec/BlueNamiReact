@@ -12,8 +12,7 @@ function UsersList(props){
                 <td >{props.fechaNac}</td>
                 <td >{props.pais}</td>
                 <td>{props.genero}</td>
-                
-                <td>{props.avatar}</td>
+                <td><img style={{ width: "10rem" }} src={"/img/avatars/" + props.avatar} alt=""></img></td>
 
     
             </tr>

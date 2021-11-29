@@ -3,7 +3,6 @@ import TopBar from './TopBar';
 import ContentRowProducts from './ContentRowProducts';
 import Footer from './Footer';
 import CountProducts from './CountProducts';
-import ViewCountByColours from './ViewCountByColours';
 
 
 function ContentWrapper(){
@@ -16,7 +15,6 @@ function ContentWrapper(){
                     <TopBar />
                     <CountProducts/>
                     <ContentRowProducts/>
-                    <ViewCountByColours/>
                     <Footer />
                 </div>
             </div>    
