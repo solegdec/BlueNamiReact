@@ -3,6 +3,7 @@ import TopBar from './TopBar';
 import ContentRowProducts from './ContentRowProducts';
 import Footer from './Footer';
 import CountProducts from './CountProducts';
+import "../assets/css/ContentRowProducts.css";
 
 
 function ContentWrapper(){

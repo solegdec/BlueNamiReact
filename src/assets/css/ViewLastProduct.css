@@ -2,6 +2,7 @@
     color: #97d1da;
     font-size: 25px;
     display: inline-block;
+    opacity: 2;
    
 
 }
@@ -10,6 +11,7 @@
     font-size: 30px;
     display: inline-block;
     font-family: "caveat";
+    opacity: 2;
 
 }
 
@@ -18,11 +20,15 @@
     font-family: "caveat";
     color: #006f80;
     margin-bottom: -20px;
+    opacity: 2;
 }
 .text-center h4{
     font-size: 30px;
     text-align: left;
     color: #97d1da;
     margin-bottom: -20px;
+    opacity: 2;
 }
-
+.text-center img{
+    opacity: 2;
+}

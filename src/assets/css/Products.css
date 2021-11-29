@@ -13,5 +13,8 @@ thead.encabezado{
     font-size: 40px;
    text-align: center;
    margin: 20px;
+   margin-top: 100px;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+   color: rgb(160, 245, 240);
+   
 }

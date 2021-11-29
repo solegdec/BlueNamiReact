@@ -1,6 +1,5 @@
 import FirstUser from "./FirstUser" ;
 import LastProduct from "./LastProduct" ;
-
 import "../assets/css/ContentRowProducts.css";
 
 function ContentRowProducts() {

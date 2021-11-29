@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import UsersList from './UsersList.js';
 
 class Users extends Component{
@@ -47,8 +46,6 @@ return(
 											<th>Avatar</th>
 											</tr>
 										</thead>
-										
-										
 										<tbody>
 											
 											{this.state.usersList.map((user, i)=>{

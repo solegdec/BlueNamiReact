@@ -2,6 +2,7 @@
     color: #97d1da;
     font-size: 25px;
     display: inline-block;
+    opacity: 2;
 
     
 }
@@ -10,10 +11,23 @@
     font-size: 30px;
     display: inline-block;
     font-family: "caveat";
+    opacity: 2;
     
 
 }
-
+.col-lg-6{
+    opacity: 0.9;
+}
+.nombreU, 
+.apellidoU,
+.mailU,
+.fNU,
+.paisU,
+.generoU{
+    color: #006f80;
+    font-size: 30px;
+    font-family: "caveat";
+}
 
 
 

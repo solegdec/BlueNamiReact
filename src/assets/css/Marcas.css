@@ -4,6 +4,8 @@
    text-align: center;
    margin: 20px;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+   color: rgb(160, 245, 240);
+   margin-top: 100px;
 }
 
 thead.tablitaMarcas{
@@ -15,4 +17,8 @@ thead.tablitaMarcas{
     font-family: "roboto";
     color:white;
 
+}
+#wrapper{
+    background-image:url('../images/a.jpg');
+    background-size: contain;
 }
