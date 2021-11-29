@@ -33,7 +33,11 @@ function ProductDetail(){
                     </h6>
                 </div>
                 <ViewProductDetail
-                    imagen={product.imagen}nombre={product.nombre}precio={product.precio}id={product.id} url={product.url} 
+                    imagen={product.imagen}
+                    nombre={product.nombre}
+                    precio={product.precio}
+                    id={product.id} 
+                    url={product.url} 
                 />
             </div>
         </div>

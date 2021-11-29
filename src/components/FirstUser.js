@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import ViewFirstUser from "./ViewFirstUser";
 import image from "../assets/images/avatarDefault.jpeg"
-import userEvent from "@testing-library/user-event";
+
 
 function FirstUser() {
     let [user, setUser] = useState({

@@ -1,12 +1,9 @@
 import React from 'react';
 import TopBar from './TopBar';
 import ContentRowProducts from './ContentRowProducts';
-import Products from './Products';
 import Footer from './Footer';
-
-import MarcasInDb from './Marcas';
-
 import CountProducts from './CountProducts';
+import ViewCountByColours from './ViewCountByColours';
 
 
 function ContentWrapper(){
@@ -19,6 +16,7 @@ function ContentWrapper(){
                     <TopBar />
                     <CountProducts/>
                     <ContentRowProducts/>
+                    <ViewCountByColours/>
                     <Footer />
                 </div>
             </div>    

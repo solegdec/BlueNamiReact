@@ -5,7 +5,8 @@ function CountProducts(){
     
     let [products, setProducts] = useState("Sin productos");
     let [users, setUsers] = useState("Sin usuarios");
-    let [marcas, setOrders] = useState("Sin marcas")
+    let [marcas, setMarcas] = useState("Sin marcas")
+    
 
     let datos = [
         {
@@ -25,7 +26,8 @@ function CountProducts(){
             cantidad: users,
             colorBorder: "warning",
             icono: "fa-user-check"
-        }
+        },
+        
     ]
     
 
@@ -39,7 +41,7 @@ function CountProducts(){
         fetch("/api/marcas")
         .then(resultado => resultado.json())
         .then(marcas => {
-            setOrders(marcas.meta.count)
+            setMarcas(marcas.meta.count)
         })
 
         fetch("/api/users")
@@ -47,6 +49,7 @@ function CountProducts(){
         .then(users => {
             setUsers(users.count)
         })
+        
     }, [])
 
     return (

@@ -11,7 +11,7 @@ function ProductsList(props){
                 <td className="precios"><p>${props.precio}</p></td>
                 <td>{props.marca.marca}</td>
                 <td>{props.unidades}</td>
-                <td><img style={{ width: "10rem" }} src={"/img/" + props.foto}></img></td>
+                <td><img style={{ width: "10rem" }} src={"/img/" + props.foto} alt=""></img></td>
             
                 <td>
                     <ul>
